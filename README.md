@@ -1,5 +1,7 @@
 # HW-3-bigdata
 
+# Все требуемые криншоты находятся в папках в репозитории, ниже по тексту будут даны прямые ссылки на папки
+
 ## Kafka
 
 ## Запуск docker-compose
@@ -8,7 +10,6 @@
 docker-compose build
 
 docker-compose up -d
-
 ```
 
 ## Jobmanager
@@ -23,7 +24,6 @@ http://localhost:8081/#/overview
 docker-compose exec kafka kafka-topics.sh --bootstrap-server kafka:9092 --create --topic zitnerhw3 --partitions 3 --replication-factor 1
 
 docker-compose exec kafka kafka-topics.sh --bootstrap-server kafka:9092 --create --topic zitnerhw3_processed --partitions 3 --replication-factor 1
-
 ```
 
 ## Команды для запуска джоб
@@ -94,6 +94,8 @@ cancel job in Apache Flink Dashboard
 ```
 
 ## Блок 3
+
+Kafka backoff
 
 ```
 stop python consumer_2.py
